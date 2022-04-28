@@ -1,15 +1,13 @@
 //Prevents the form from submitting
-const button = () => {
-    document.getElementById("submit");
-    button.addEventListener('click',(e) =>{
+const button = document.getElementById("submit");
+    button.addEventListener('click',(e) => {
         e.preventDefault();
-    });
-};
+});
 
-//Function to store the toggle password and password variables
+//Password
+//Variables to store the toggle password and password values
 const togglePassword =  document.querySelector("#togglePassword");
 const password = document.querySelector("#password");
-
 //Add an event listener to the togglePassword icon
 togglePassword.addEventListener('click', (e) => {
     //toggle the type attribute
@@ -19,6 +17,7 @@ togglePassword.addEventListener('click', (e) => {
     this.classList.toggle("fa-eye");
 });
 
+//Confirm Password
 const togglePassword1 = document.querySelector("#togglePassword1");
 const password1 = document.querySelector("#password1");
 
